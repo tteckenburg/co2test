@@ -55,7 +55,7 @@ if __name__ == "__main__":
             values[op] = val
             
             # Output all data, mark just received value with asterisk
-#            print ", ".join( "%s%02X: %04X %5i" % ([" ", "*"][op==k], k, v, v) for (k, v) in sorted(values.items())), "  ", 
+              print ", ".join( "%s%02X: %04X %5i" % ([" ", "*"][op==k], k, v, v) for (k, v) in sorted(values.items())), "  ", 
             ## From http://co2meters.com/Documentation/AppNotes/AN146-RAD-0401-serial-communication.pdf
             if 0x50 in values:
 		#print(time.strftime("%d.%m.%Y %H:%M:%S"))
